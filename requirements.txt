@@ -1,0 +1,28 @@
+# ===== HS 依赖 =====
+# 终端 CLI 版（Web/IDE 已移除，不再需要 Flask/pywebview）
+
+# --- 模型网关（80+ 供应商 + 统一 OpenAI 兼容 + 本地接入）---
+litellm>=1.40.0
+requests>=2.31.0
+
+# --- 沙箱执行（可选：进程资源限制较强则需 psutil）---
+psutil>=5.9.0
+
+# --- 训练/微调支线（按需，显存相关注释）---
+# torch>=2.2.0            # 8GB GPU 可装 CUDA 版
+# transformers>=4.40.0
+# peft>=0.10.0
+# datasets>=2.18.0
+# bitsandbytes>=0.43.0     # 4bit 量化（Linux 稳定，Windows 需预编译）
+
+# --- 私有化部署（vLLM/Ollama 客户端）---
+ollama>=0.1.8
+
+# --- 测试 ---
+pytest>=8.0.0
+
+# --- Computer Use（本机桌面自主操作；Windows 必需，可选带 *) ---
+pyautogui>=0.9.53          # 键鼠 + 屏幕
+pywinauto>=0.6.9           # 窗口 + UI Automation 控件树
+mss>=9.0.0                 # 全屏截图
+Pillow>=10.0.0             # 图像基础（多数情况已随依赖装上）

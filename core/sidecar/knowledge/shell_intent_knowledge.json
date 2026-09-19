@@ -1,0 +1,118 @@
+[
+  {
+    "label": "curl_sh_pipe",
+    "patterns": [
+      "curl\\s+.*\\|\\s*(ba)?sh",
+      "wget\\s+.*\\|\\s*(ba)?sh"
+    ],
+    "keywords": [
+      "curl",
+      "wget",
+      "| sh",
+      "| bash",
+      "pipe sh"
+    ],
+    "violation_score": 0.95,
+    "description": "远程脚本直接 pipe 进 shell，是最常见的恶意命令注入方式"
+  },
+  {
+    "label": "rm_data_directory",
+    "patterns": [
+      "rm\\s+-rf\\s+\\.?/data",
+      "rm\\s+-rf\\s+data/",
+      "rm\\s+-rf\\s+/var/lib/mysql"
+    ],
+    "keywords": [
+      "rm -rf data",
+      "rm -rf ./data",
+      "delete data",
+      "删数据"
+    ],
+    "violation_score": 0.9,
+    "description": "删除业务数据目录，高危破坏性操作"
+  },
+  {
+    "label": "rm_project_root",
+    "patterns": [
+      "rm\\s+-rf\\s+\\.\\s*--no-preserve-root",
+      "rm\\s+-rf\\s+--no-preserve-root"
+    ],
+    "keywords": [
+      "rm -rf .",
+      "no-preserve-root",
+      "删项目"
+    ],
+    "violation_score": 0.95,
+    "description": "删除整个项目根目录，不可恢复"
+  },
+  {
+    "label": "rm_temp_cache_benign",
+    "patterns": [
+      "rm\\s+-rf\\s+\\.?/tmp/\\*",
+      "rm\\s+-rf\\s+\\.?/__pycache__",
+      "rm\\s+-rf\\s+\\.?/\\.pytest_cache"
+    ],
+    "keywords": [
+      "rm -rf ./tmp",
+      "rm __pycache__",
+      "rm .pytest_cache"
+    ],
+    "violation_score": 0.05,
+    "description": "清理缓存/临时文件，正常维护操作"
+  },
+  {
+    "label": "pip_install_benign",
+    "patterns": [
+      "pip\\s+install\\s+[a-zA-Z0-9_\\-]+",
+      "npm\\s+install"
+    ],
+    "keywords": [
+      "pip install",
+      "npm install",
+      "装依赖"
+    ],
+    "violation_score": 0.05,
+    "description": "官方渠道装依赖，合规"
+  },
+  {
+    "label": "systemctl_restart_prod",
+    "patterns": [
+      "systemctl\\s+restart",
+      "service\\s+\\w+\\s+restart"
+    ],
+    "keywords": [
+      "systemctl restart",
+      "restart prod",
+      "重启生产"
+    ],
+    "violation_score": 0.55,
+    "description": "restart 生产服务，需确认是否在发布流程内"
+  },
+  {
+    "label": "git_force_push",
+    "patterns": [
+      "git\\s+push\\s+.*--force",
+      "git\\s+push\\s+-f"
+    ],
+    "keywords": [
+      "git push --force",
+      "force push",
+      "强推"
+    ],
+    "violation_score": 0.7,
+    "description": "force push 会覆盖历史，需在特定场景下才允许"
+  },
+  {
+    "label": "tail_logs_benign",
+    "patterns": [
+      "tail\\s+-f\\s+/var/log",
+      "tail\\s+.*\\.log"
+    ],
+    "keywords": [
+      "tail log",
+      "读日志"
+    ],
+    "violation_score": 0.05,
+    "description": "读日志，正常 debug 操作"
+  }
+]

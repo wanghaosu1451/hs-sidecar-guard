@@ -1,0 +1,67 @@
+﻿# ====== 大文件（必须放最顶部，优先级最高）======
+*.safetensors
+*.pt
+*.bin
+*.ckpt
+*.onnx
+*.gguf
+training_args.bin
+
+# ====== LoRA 训练 logs（全版本）======
+artifacts/**/logs/
+
+# ====== 原始数据 / 基座 ======
+models/
+data/raw_modelscope/
+
+# ====== Python ======
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+.pytest_cache/
+
+# ====== HS 运行时 ======
+.hs/
+.hs_anchor.json
+.hs_progress.json
+.hs_trace.jsonl
+.hs_memory.json
+
+# ====== IDE ======
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ====== 环境 ======
+.env
+.env.local
+*.pem
+*.key
+id_rsa
+id_ed25519
+.venv/
+venv/
+
+# ====== 向量索引（运行时生成）======
+core/sidecar/knowledge/vector_index/
+
+# ====== 截图 / 日志 ======
+computer_capture/
+*.png
+*.jpg
+*.log
+
+# ====== 临时文件 ======
+~/
+compare_test/
+mcp_servers.json
+
+# ====== Node ======
+node_modules/

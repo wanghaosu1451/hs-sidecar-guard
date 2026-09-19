@@ -1,0 +1,410 @@
+{
+  "stats": {
+    "gpu_resident": "4.8GB",
+    "cpu_resident": "0.0B",
+    "gpu_usage_pct": 67.3,
+    "kv_cache_saved": "50%"
+  },
+  "schedule": [
+    {
+      "layer": 0,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 1,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 2,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 3,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 4,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 5,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 6,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 7,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 8,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 9,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 10,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 11,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 12,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 13,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 14,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 15,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 16,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 17,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 18,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 19,
+      "device": "gpu",
+      "encoder": true,
+      "resident_bytes": 117440512,
+      "resident_human": "112.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 20,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 21,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 22,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 23,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 24,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 25,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 26,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 27,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 28,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 29,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 30,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 31,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 32,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 33,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 34,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 35,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 36,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 37,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 38,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    },
+    {
+      "layer": 39,
+      "device": "gpu",
+      "encoder": false,
+      "resident_bytes": 142606336,
+      "resident_human": "136.0MB",
+      "offload_bytes": 469762048,
+      "offload_human": "448.0MB",
+      "active_experts": 4
+    }
+  ]
+}

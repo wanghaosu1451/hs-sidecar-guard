@@ -1,0 +1,39 @@
+{
+  "llm": {
+    "provider": "ollama/qwen3.5:9b-nothink",
+    "api_key": "sk-hs2026",
+    "base_url": "http://[2408:820c:8fba:5000:e881:eda0:72df:9d44]:11435",
+    "temperature": 0.3,
+    "max_tokens": 4096,
+    "stream": true,
+    "retry": true
+  },
+  "budget": {
+    "max_steps": 300,
+    "max_tokens": 0
+  },
+  "sandbox": {
+    "enabled": true,
+    "timeout_seconds": 60,
+    "max_cpu_percent": 80,
+    "max_memory_mb": 4096,
+    "allow_network": false,
+    "allowed_dirs": []
+  },
+  "training": {
+    "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+    "output_dir": "./artifacts",
+    "quantization": "4bit",
+    "lora_r": 16,
+    "learning_rate": 0.0002,
+    "epochs": 1,
+    "batch_size": 4,
+    "use_gpu": true
+  },
+  "deploy": {
+    "backend": "ollama",
+    "host": "127.0.0.1",
+    "port": 11434,
+    "api_base": "http://127.0.0.1:11434"
+  }
+}

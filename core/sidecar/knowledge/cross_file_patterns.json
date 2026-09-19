@@ -1,0 +1,60 @@
+[
+  {
+    "pattern": "config_port_hardcode",
+    "trigger_files": [
+      "config.py",
+      "server.py",
+      "main.py"
+    ],
+    "description": "改 config.py PORT 常量时，需检查 server.py 有没有硬编码 socket.listen(PORT) 调用"
+  },
+  {
+    "pattern": "util_helper_rename",
+    "trigger_files": [
+      "util.py",
+      "helper.py"
+    ],
+    "description": "改 util.py 里的 helper 函数名/签名时，main.py、cli.py、tests/ 下所有 import 要同步改"
+  },
+  {
+    "pattern": "env_var_rename",
+    "trigger_files": [
+      ".env",
+      "config.py"
+    ],
+    "description": "改 .env / config.py 的 ENV 变量名时，docker-compose.yml、systemd service、部署脚本要同步"
+  },
+  {
+    "pattern": "database_schema",
+    "trigger_files": [
+      "models.py",
+      "alembic",
+      "migrations"
+    ],
+    "description": "改 ORM model schema 必须配套生成 alembic migration，不能直接改 model.py"
+  },
+  {
+    "pattern": "api_endpoint",
+    "trigger_files": [
+      "router.py",
+      "api.py",
+      "client.py"
+    ],
+    "description": "改后端 API endpoint（路由）时，前端 SDK / 调用方要同步"
+  },
+  {
+    "pattern": "logger_format",
+    "trigger_files": [
+      "logger.py",
+      "logging.py"
+    ],
+    "description": "改 logger 输出格式时，所有下游 grep/awk 日志解析脚本要同步"
+  },
+  {
+    "pattern": "docker_base_image",
+    "trigger_files": [
+      "Dockerfile"
+    ],
+    "description": "升级 Dockerfile base image 时，CI 缓存要清，所有子镜像要 rebase"
+  }
+]

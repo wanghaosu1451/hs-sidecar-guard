@@ -1,0 +1,16 @@
+{
+  "bits": 4,
+  "clamp": 8.0,
+  "num_experts": 32,
+  "routing_bias": 0.05,
+  "swiglu_clamp_active": true,
+  "avg_quant_error_pct": 0.0,
+  "anticipatory_route_prep": [
+    -0.014,
+    0.031,
+    -0.046,
+    0.024,
+    -0.001,
+    0.005
+  ]
+}

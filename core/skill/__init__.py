@@ -1,0 +1,1 @@
+"""skill 生态：HS 智能体自装技能包能力。见 core/skill/registry.py。"""
